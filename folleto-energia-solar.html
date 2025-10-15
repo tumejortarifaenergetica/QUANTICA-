@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energía Solar para tu Negocio – Folleto</title>
+<style>
+  :root {
+    --bg:#ffffff;
+    --fg:#0f172a;
+    --muted:#475569;
+    --accent:#0ea5e9;
+    --card:#f8fafc;
+    --border:#e2e8f0;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    color:var(--fg); background:var(--bg); line-height:1.55;
+  }
+  .wrap { max-width:960px; margin:0 auto; padding:40px 24px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:20px; padding:28px; }
+  h1 { font-size:clamp(28px, 3.5vw, 40px); margin:0 0 8px; letter-spacing:-0.02em; }
+  h2 { font-size:clamp(18px, 2.5vw, 22px); color:var(--muted); font-weight:500; margin:0 0 24px; }
+  .claim { background:#e6f6fd; border:1px solid #cbeffd; padding:12px 16px; border-radius:12px; font-weight:600; margin:12px 0 20px; }
+  p.lead { font-size:18px; color:#1f2937; margin-top:0; }
+  .grid { display:grid; gap:16px; grid-template-columns:1fr; }
+  @media (min-width: 800px) { .grid { grid-template-columns: 1.1fr 0.9fr; } }
+  figure { margin:0; background:white; border:1px solid var(--border); border-radius:16px; padding:12px; }
+  figcaption { font-size:12px; color:var(--muted); text-align:center; margin-top:6px; }
+  table { width:100%; border-collapse:collapse; background:white; border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+  th, td { padding:12px 10px; text-align:left; vertical-align:top; border-bottom:1px solid var(--border); }
+  thead th { background:#f1f5f9; font-weight:600; }
+  tbody tr:last-child td { border-bottom:none; }
+  ul { padding-left:18px; }
+  .section-title { margin:28px 0 8px; font-size:20px; }
+  .footer { margin-top:28px; font-size:12px; color:var(--muted); }
+  .brand { color:var(--accent); font-weight:700; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Energía Solar para tu Negocio</h1>
+      <h2>Autoconsumo Colectivo Sostenible y Económico</h2>
+      <div class="claim">¡Reduce tus facturas de luz hasta un 30% con energía 100% renovable!</div>
+      <p class="lead">Imagina suministrar tu energía eléctrica directamente de una planta fotovoltaica moderna, sin inversión inicial. En Quantica Yield Maroma, promovemos plantas solares en régimen de autoconsumo colectivo, regulado por el Real Decreto 244/2019. Tú consumes, nosotros generamos y mantenemos. Simple, verde y rentable.</p>
+
+      <div class="grid">
+        <section>
+          <h3 class="section-title">Tu Ahorro Real: Comparativa de Precios</h3>
+          <table role="table" aria-label="Comparativa de precios">
+            <thead>
+              <tr>
+                <th>Concepto</th><th>Precio Actual de Red (ej. €/kWh)</th><th>Precio Solar Quantica (€/kWh)</th><th>Ahorro Estimado Anual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Energía Base</td><td>0,15 € (promedio mercado 2025) [editable]</td><td>0,085 € (fijo) [editable]</td><td>Hasta 1.792 kWh/año × (0,15 - 0,085) = **€</td></tr><tr><td>Indexación Anual</td><td>Variable (subidas 5–10%)</td><td>+2% (predecible y baja)</td><td>Estabilidad total</td></tr><tr><td>Total Mensual (ejemplo)</td><td>225 € [editable]</td><td>152 €</td><td>73 €/mes</td></tr>
+            </tbody>
+          </table>
+          <p class="footer"><strong>Notas:</strong> Precio fijo sin IVA. Ahorro basado en tu consumo asignado (editable: 1.792 kWh/año, 1,73% de adhesión). Incluye todos los impuestos. Personalízalo con tus datos reales.</p>
+        </section>
+
+        <aside>
+          <figure>
+            <img src="ahorro_chart.png" alt="Gráfico comparativo de precio por kWh" style="width:100%;height:auto;display:block;border-radius:8px;">
+            <figcaption>Gráfico de ahorro (simulado)</figcaption>
+          </figure>
+        </aside>
+      </div>
+
+      <section>
+        <h3 class="section-title">Cómo Funciona</h3>
+        <ul>
+          <li>Firma y adhesión: Te unimos a la planta colectiva (porcentaje editable: 1,73%).</li><li>Instalación: En 15 meses máx., con todos los permisos.</li><li>Suministro: Factura mensual por domiciliación (pago en 5 días).</li><li>Mantenimiento: Nosotros lo cubrimos todo – tú solo disfrutas.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="section-title">Garantías</h3>
+        <p>Cumplimos normativas de seguridad, medioambiente y anticorrupción. Confidencialidad total.</p>
+      </section>
+
+      <hr style="border:none;border-top:1px solid var(--border); margin:20px 0;">
+      <p class="footer">Proyecto <span class="brand">Quantica Yield Maroma</span> · Autoconsumo colectivo regulado por RD 244/2019.</p>
+    </div>
+  </div>
+</body>
+</html>
